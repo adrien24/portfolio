@@ -6,7 +6,7 @@ import Work from "../pages/Work";
 import Doubleboggey from "../pages/Doubleboggey"
 import Michelangelo from "../pages/Michelangelo";
 import Nearide from "../pages/Nearide";
-import Onepunch from "../pages/Onepunch";
+import Bureau from "../pages/Bureau";
 
 
 Vue.use(Router)
@@ -21,7 +21,7 @@ export default new Router({
     {path: '/doubleboggey',name: 'Doubleboggey',component: Doubleboggey},
     {path: '/michelangelo',name: 'Michelangelo',component: Michelangelo},
     {path: '/nearide',name: 'Nearide',component: Nearide},
-    {path: '/onepunch',name: 'Onepunch',component: Onepunch},
+    {path: '/bureau',name: 'Bureau',component: Bureau},
 
 
   ]

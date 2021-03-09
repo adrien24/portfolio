@@ -34,13 +34,12 @@
       </div>
     </router-link>
 
-    <router-link to="/onepunch">
-      <div class="onepunch">
+    <router-link to="/bureau">
+      <div class="bureau">
 
-        <p>2020-2021</p>
-        <h2>One Punch Man</h2>
-        <p>Pour le 3ème semestre nous devions réaliser un projet en motion design j'ai donc choisi de faire un AMV de
-          One Punch Man</p>
+        <p>2021</p>
+        <h2>Bureau</h2>
+        <p>Pour le dernier semestre de ma formation je devais réaliser un bureau entièrement en 3D et faire des animations dessus en Three.js</p>
 
       </div>
     </router-link>
@@ -267,8 +266,8 @@ p {
   }
 }
 
-.onepunch {
-  background: url("../assets/img/onepunchman.jpg") no-repeat;
+.bureau {
+  background: url("../assets/img/chaise_gaming.png") no-repeat;
   width: 35%;
   float: left;
   position: absolute;
@@ -305,10 +304,10 @@ p {
 
 }
 
-.onepunch:hover {
+.bureau:hover {
   animation: Bsize2 1s;
   width: 30%;
-  background: url("../assets/img/onepunchmanS.png") no-repeat;
+  background: url("../assets/img/chaise_gamingS.png") no-repeat;
 
 }
 
@@ -317,7 +316,7 @@ p {
   margin-left: 10%;
 }
 
-.onepunch > p:first-child {
+.bureau > p:first-child {
   margin-top: 10%;
   margin-left: 10%;
 }
@@ -327,7 +326,7 @@ p {
   margin-left: 10%;
 }
 
-.onepunch > h2 {
+.bureau > h2 {
   margin-top: 5%;
   margin-left: 10%;
 }
@@ -340,7 +339,7 @@ p {
   animation: cacherT 2;
 }
 
-.onepunch > p:nth-child(3) {
+.bureau > p:nth-child(3) {
   padding: 666px 15% 8%;
   position: absolute;
   opacity: 0;
@@ -354,7 +353,7 @@ p {
   opacity: 1;
 }
 
-#app > div > div.onepunch > p:nth-child(3):hover {
+#app > div > div.bureau > p:nth-child(3):hover {
   animation: TextD 2s;
   opacity: 1;
 }
@@ -453,12 +452,12 @@ p {
 
 @media (min-width: 320px) and (max-width: 768px) {
 
-  .Nearide:hover, .doubleboggey:hover, .Michelangelo:hover, .onepunch:hover {
+  .Nearide:hover, .doubleboggey:hover, .Michelangelo:hover, .bureau:hover {
     width: 72% !important;
     animation: none !important;
   }
 
-  .Nearide, .doubleboggey, .Michelangelo, .onepunch {
+  .Nearide, .doubleboggey, .Michelangelo, .bureau {
     animation: none;
   }
 
@@ -471,7 +470,7 @@ p {
     height: 291vh;
   }
 
-  .doubleboggey, .Michelangelo, .Nearide, .onepunch {
+  .doubleboggey, .Michelangelo, .Nearide, .bureau {
     height: 388px !important;
     width: 72%;
 
@@ -485,19 +484,19 @@ p {
     background: url("../assets/img/MichelangeloS.png");
   }
 
-  .onepunch {
-    background: url("../assets/img/MichelangeloS.png");
+  .bureau {
+    background: url("../assets/img/chaise_gamingS.png");
   }
 
   .Nearide {
     background: url("../assets/img/NearideS.png");
   }
 
-  .doubleboggey > h2, .Michelangelo > h2, .Nearide > h2, .onepunch > h2 {
+  .doubleboggey > h2, .Michelangelo > h2, .Nearide > h2, .bureau > h2 {
     font-size: 2rem;
   }
 
-  .doubleboggey > p:nth-child(3), .Michelangelo > p:nth-child(3), .Nearide > p:nth-child(3), .onepunch > p:nth-child(3) {
+  .doubleboggey > p:nth-child(3), .Michelangelo > p:nth-child(3), .Nearide > p:nth-child(3), .bureau > p:nth-child(3) {
     opacity: 1;
     padding-top: 148px !important;
     font-size: 1.2rem;
@@ -508,7 +507,7 @@ p {
     top: 550px;
   }
 
-  .onepunch {
+  .bureau {
     margin-right: 3.2%;
     top: 1508px !important;
   }
@@ -544,7 +543,7 @@ p {
 }
 
 @media (max-width: 1600px) {
-  .Nearide, .doubleboggey, .Michelangelo, .onepunch {
+  .Nearide, .doubleboggey, .Michelangelo, .bureau {
     height: 645px;
   }
 
@@ -552,11 +551,11 @@ p {
     top: 816px;
   }
 
-  .onepunch {
+  .bureau {
     top: 1037px;
   }
 
-  .Nearide > p:nth-child(3), .doubleboggey > p:nth-child(3), .Michelangelo > p:nth-child(3), .onepunch > p:nth-child(3) {
+  .Nearide > p:nth-child(3), .doubleboggey > p:nth-child(3), .Michelangelo > p:nth-child(3), .bureau > p:nth-child(3) {
     padding-top: 510px;
   }
 
@@ -573,7 +572,7 @@ p {
     right: 10%;
   }
 
-  .onepunch {
+  .bureau {
     right: 10%;
   }
 }
