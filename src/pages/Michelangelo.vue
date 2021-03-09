@@ -52,7 +52,7 @@
       </div>
 
     </div>
-    <a href="https://doubleboggey2.adrienbouteiller.com">Voir le site</a>
+    <a href="https://adrienbouteiller.com/Michelangelo/#/">Voir le site</a>
 
     <div :class="[ 'g-cursor', { 'g-cursor_hover': hover }, {'g-cursor_hide': hideCursor} ]">
       <div :style="cursorCircle" class="g-cursor__circle"></div>
