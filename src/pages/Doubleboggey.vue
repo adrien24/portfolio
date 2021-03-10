@@ -4,7 +4,7 @@
     <div class="presentation">
       <h1>Doubleboggey</h1>
       <span></span>
-      <img src="../assets/img/Mockup_doubleboggey.png" alt="doubleboggey mokup" style="width: 30%"/>
+      <img src="../assets/img/Mockup_doubleboggey.png" alt="doubleboggey mokup"/>
     </div>
 
     <div class="contextedesign">
@@ -23,40 +23,42 @@
           Le site doit communiquer de la convivialité : l’association cherche à recruter, et à augmenter l’esprit de
           partage du sport dans la bonne humeur et la passion.</p>
       </div>
+    </div>
 
 
-      <div class="logiciels">
-        <div class="LG">
-          <h2 v-scroll>Logiciels & langages</h2>
-          <p v-scroll>Pour les logiciels, j’ai utilisé Photoshop pour faire des retouches sur certaines images. Mais
-            aussi Illustrator pour faire le nouveau logo du site, et Adobe XD pour réaliser la maquette. J’ai intégré le
-            site avec Wordpress car celui-ci devait être dynamique. J’ai donc utilisé le page builder Elementor
-            (gratuit) et des plugins wordpress. Pour les langages j’ai utilisé du HTML/CSS/JS pour intégrer une partie
-            de la maquette pour en faire une présentation à mon commanditaire, puis je l’ai intégrée sur Wordpress.
-          </p>
-        </div>
-
-        <div class="video">
-          <img src="../assets/img/Mockup_vid.png" alt="vid_doubleboggey" v-scroll/>
-          <video autoplay loop v-scroll>
-            <source src="../assets/video/Vid_DB.mp4"
-                    type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        </div>
-
-
+    <div class="logiciels">
+      <div class="LG">
+        <h2 v-scroll>Logiciels & langages</h2>
+        <p v-scroll>Pour les logiciels, j’ai utilisé Photoshop pour faire des retouches sur certaines images. Mais
+          aussi Illustrator pour faire le nouveau logo du site, et Adobe XD pour réaliser la maquette. J’ai intégré le
+          site avec Wordpress car celui-ci devait être dynamique. J’ai donc utilisé le page builder Elementor
+          (gratuit) et des plugins wordpress. Pour les langages j’ai utilisé du HTML/CSS/JS pour intégrer une partie
+          de la maquette pour en faire une présentation à mon commanditaire, puis je l’ai intégrée sur Wordpress.
+        </p>
       </div>
 
+      <div class="video">
+
+        <video autoplay loop>
+          <source src="../assets/video/Vid_DB.mp4"
+                  type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+
+
     </div>
+
+    <div class="voirplus">
     <a href="https://doubleboggey2.adrienbouteiller.com">Voir le site</a>
+  </div>
 
     <div :class="[ 'g-cursor', { 'g-cursor_hover': hover }, {'g-cursor_hide': hideCursor} ]">
       <div :style="cursorCircle" class="g-cursor__circle"></div>
       <div class="g-cursor__point" ref="point" :style="cursorPoint"></div>
     </div>
     <HeaderP/>
-    <Transition/>
+
     <FooterP/>
   </div>
 
@@ -159,262 +161,169 @@ export default {
   opacity: 1;
 }
 
-.Pdoubleboggey {
-  height: 200vh !important;
-}
 
 .presentation {
   text-align: center;
-  height: 50vh;
-  margin-left: 8%;
+  height: 500px;
+  margin-left: 5%;
   background: url("../assets/img/double_boggey_background.jpg") no-repeat center top;
+  width: 100%;
   background-size: 1800px;
 }
 
-h1 {
-  font-family: "Neue Haas Grotesk Display Pro 65 Medium", sans-serif;
-  font-size: 4rem;
-  color: white;
-}
-
 .presentation > h1 {
-  padding-top: 5% !important;
-  position: absolute;
-  right: 33%;
-  font-size: 4vw;
+  padding-top: 100px;
+  font-size: 4rem;
+  margin-left: -5%;
+  color: white;
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", sans-serif;
 }
-
-.presentation > span {
-  background: rgba(255, 255, 255, 1);
-  width: 10%;
-  position: absolute;
-  height: 3px;
-  top: 9%;
-  left: 47%;
-}
-
 
 .presentation > img {
-  position: absolute;
-  top: 12%;
-  right: 32%;
+  margin-top: 70px;
+  width: 587px;
 }
-
 
 .contextedesign {
-  width: 80%;
+  width: 100%;
   display: flex;
-  margin-left: 15%;
-  justify-content: center;
-  margin-top: 15%;
+  margin-left: 18%;
+  margin-top: 5%;
 }
 
-.contexte, .design {
-  width: 46%;
-
-}
-
-
-.contexte > h2, .design > h2 {
-  margin-bottom: 5%;
+h2 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: transparent !important;
-  font-size: 3rem;
+}
+
+.contexte, .design {
+  width: 35%;
 }
 
 .design {
-  padding-left: 5%;
-}
-
-.contexte {
-  padding-right: 5%;
-}
-
-.illustration > img {
-  position: absolute;
-  top: 150%;
-  right: 32%;
-}
-
-.illustration > .img > img {
-  position: fixed;
-  left: 30%;
-  top: 50%;
-  width: 30%;
+  margin-left: 5%;
 }
 
 
 .logiciels {
   width: 100%;
-  position: absolute;
-  top: 60%;
-  left: 18%;
   display: flex;
+  margin-left: 18%;
+  margin-top: 5%;
+  overflow-y: hidden;
+
 }
 
-.LG {
-  width: 30%;
-  padding-top: 3%;
-}
 
-.LG > h2 {
-  margin-bottom: 5%;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  color: transparent !important;
-  font-size: 3rem;
+.LG, .video {
+  width: 35%;
 }
 
 .video {
-  width: 30%;
-  padding-left: 14%;
+  margin-left: 5%;
+  background: url('../assets/img/Mockup_vid.png');
+  background-size: 85%;
+  background-position-y: 0;
+  padding-top: 0.5%;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+
 
 }
 
 .video > video {
-  position: absolute;
-  width: 29.5%;
-  padding-top: 1.5%;
-  padding-left: 0.5%;
+  width: 82%;
+  margin-left: 1.5%;
+  background-size: 50%;
+
+
 }
 
-.video > img {
-  position: absolute;
-  width: 30%;
-  padding-top: 1%;
-}
-
-#app > div > a {
-  position: absolute;
-  font-size: 4rem;
-  top: 1520px !important;
-
-  text-decoration: none;
-  left: 13%;
+a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: transparent !important;
-  font-family: "NeueM", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium", sans-serif;
+  text-decoration: none;
+  font-size: 4rem;
+  margin-left: 20%;
+  margin-bottom: 5%;
+
+}
+.voirplus{
+  margin-bottom: 9%;
 }
 
-#app > div > a:hover {
-  animation: rempliT 3s;
+@media (max-width: 992px) {
 
-}
-
-
-@media (max-width: 1600px) {
-
-  .Pdoubleboggey {
-    height: 200vh !important;
+  .presentation{
+    margin-left: 0;
+  }
+  .presentation > h1{
+    padding-top: 193px;
+    font-size: 3.5rem;
   }
 
-  .presentation {
+  .presentation > img{
+    margin-top: 59px;
+    width: 400px;
+  }
+
+  .contextedesign, .logiciels{
+    display: block;
+
+  }
+
+
+  .contexte, .design, .LG, .video{
+    width: 65%;
+  }
+
+  .contexte{
+    margin-bottom: 5%;
+  }
+
+  .LG{
+    margin-bottom: 5%;
+  }
+  .video{
+    padding-top: 1%;
+  }
+
+  .design, .video{
     margin-left: 0;
   }
 
-  .logiciels {
-    top: 941px;
-  }
+  .voirplus{
+     text-align: center;
 
-  h1 {
-    padding-top: 9% !important;
-  }
+   }
 
-
-  .presentation > img {
-    width: 38% !important;
-    right: 26%;
-  }
-
-  h2 {
-    font-size: 2rem !important;
-  }
-
-  a {
-    margin-top: -297px;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  .Pdoubleboggey {
-    height: 264vh !important;
-  }
-
-  .presentation > h1 {
-    display: none;
-  }
-
-  #app > div > div.presentation > img {
-    top: 12%;
-  }
-
-  a {
-    margin-top: 70px;
-  }
-
-
-  h1 {
-    top: 10% !important;
-    font-size: 2rem !important;
-    right: 21% !important;
-    left: 23% !important;
-  }
-
-  span {
-    display: none !important;
-  }
-
-  .contextedesign {
-    width: 100%;
+  .voirplus > a {
     margin-left: 0;
   }
+}
+
+@media (max-width: 425px) {
+
+
+    h1{
+      font-size: 2.6rem!important;
+      margin-left: 0.1%!important;
+    }
 
   .presentation > img {
-    width: 71% !important;
-    right: 10%;
+    margin-top: 77px;
+    width: 296px;
   }
 
-  .contexte, .design {
-    width: 83%;
+  .contextedesign, .logiciels{
+    margin-left: 10%;
   }
 
-  .contexte {
-    position: absolute;
-    top: 427px;
-
-  }
-
-  .design {
-    padding-left: 0;
-    top: 700px;
-    position: absolute;
-
-  }
-
-  .logiciels {
-    left: 9%;
-    padding-top: 17px;
-    top: 967px;
-  }
-
-  .LG {
-    position: absolute;
-    width: 100% !important;
-    padding-top: 42px;
-  }
-
-  .LG > p {
-    width: 84%;
-  }
-
-  .video {
-    position: absolute;
-    width: 187% !important;
-    margin-top: 392px;
+  .contexte, .design, .LG, .video{
+    width: 82%;
   }
 
 

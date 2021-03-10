@@ -38,6 +38,10 @@ export default {
 <style lang="scss">
 @import "assets/sass/base";
 
+body{
+  overflow-x: hidden;
+}
+
 *{
   cursor: none;
 }
